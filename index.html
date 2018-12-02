@@ -48,17 +48,16 @@ Matthew Stipsits
 <p style="font-weight:bold">
 Developer Notes:
 </p>
-  <p>11 September:</p>
-  <p>18 September:</p>
-  <p>25 September:</p>
-  <p>11 September:</p>
-  <p>02 October:</p>
-  <p>16 October:</p>
-  <p>23 October:</p>
-  <p>30 October:</p>
-  <p>06 November:</p>
-  <p>13 November:</p>
-  <p>20 November:</p>
-  <p>27 November:</p>
+  <p>11 September: We've held our first meeting with our customer, Mike Flamm. We've established our priorities of work and gameplan for the semester. Our team is in charge of cleaning up and updating the vehicle database for the mobile app of Delta V Innovations. These tables need to be populated with vehicle data and be available for the mobile app teams to access through their app. Also, we need to expand the database for tables that currently do not exist. </p>
+  <p>18 September: After a week of working, Mike informed us of another team that is working on scanning barcodes through the app and how they should store the details. We decided that they should access the information gathered from the barcode from the database rather than utilizing a google search. Our mission of the week is to get into contact with the other team and coordinate efforts.</p>
+  <p>25 September: We've started runing into troubles with the database format and the new data we are using from the Canadian Vehicle Database (CVB). They are organized in vastly different formats and the database has different data on the same cars than the data from the CVB. We were wondering if we should replace the data with what we are adding, however, Mike has informed us to not replace the data and just add to it.</p>
+  <p>02 October: Mike touched on the topic of Data Security and how we should address it. During our meeting we discussed the privacy of the workfiles and private information being sent up into the database. We acknowledged that hosting off of AWS provides very decent security on its own, but also noted that anything being sent up should be encripted by the app and the database will store the encripted files.</p>
+  <p>16 October: Instead of trying to work through each of the several file arranged from 1971 to 2018, we came up with the idea to write a script that organizes and formats each file to the table structure seen in the database.</p>
+  <p>23 October: Our script idea started off successfully at first, but we began to run into several issues when trying to merge the .csv files into the database tables. The main issues we noted were that the CVB had labled the vehicle data differently and lacked the amount of data we currently saw per vehicle in the database. Our concerns were brought up with Mike and we continued working on it.</p>
+  <p>30 October: Work continued as normal. Updated Mike on our progress.</p>
+  <p>06 November: We scrapped the plan of trying to organize each file and merge it into the database as there were too many discrepancies such as the ones mentioned before and the fact that even among the files some were organized in diffrent ways. The new plan we came up with and fulfilled was to add a new seperate table in the database and fill that one with everything from the CVB. For it to be handled on the mobile app, we noted that there'd need to be a button to access "more" or "extra" vehicle information to access this new table.</p>
+  <p>13 November: Mike presented us with his "twist" for the assignment. We were told to include production of a login page for users, storage for data sent by mobile app, and a finished script that converts and organizes CSV files into the format of our database. For the login page we need to establish tables within our database for storage of users' information. We'd need to include login information and personal information for each account. For the script, we'd need to setup a script that can take new updated files about vehicles each year and correctly format them to update the database.</p>
+  <p>20 November: We've made headway on our "twist" and informed Mike where we were at before the Thanksgiving break.</p>
+  <p>27 November: We noted we were having issues getting access to the files in the database as they are locked behind a key created by last semesters team. We're awaiting response from them so that we can alter and create filew on the server. Coordinating with the other teams has also informed us to input several php files into the database to assist each other on our "twists." Once accomplished, we are going to verify that the app can be updated and can connect to the database.</p>
 </body>
 </html>
